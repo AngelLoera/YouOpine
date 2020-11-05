@@ -21,7 +21,7 @@ namespace YouOpine.Entities
         [Required(ErrorMessage ="The username field is required")]
         [MaxLength(25, ErrorMessage = "UserName must be 25 characters or less"), MinLength(5)]
         public string UserName { get; set; }
-
+        
         [Required(ErrorMessage = "The password field is required")]
         [MaxLength(10, ErrorMessage = "Password must be 10 characters or less"), MinLength(5)]
         public string Password { get; set; }
