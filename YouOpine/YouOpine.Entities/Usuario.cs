@@ -9,9 +9,8 @@ namespace YouOpine.Entities
 {
     public class Usuario
     {
-        [key]
+        [Key]
         public int ID_Us { get; set; }
-
         [Required(ErrorMessage = "El nombre de usuario es requerido")]
         [MaxLength(15, ErrorMessage = "Nombre de tener 20 caracteres o menos"), MinLength(5)]
         public string Nombre { get; set; }
